@@ -13,9 +13,9 @@ namespace TestMaximum
         [Test]
         public void GivenFloatInput_WhenTestMax_ShouldReturnMaxNum()
         {
-            FindMax max = new FindMax();
-            string actual = max.FindMaxString("Apple", "Banana", "Peach");
-            Assert.AreEqual(actual, "Banana");
+            FindMax<float> max = new FindMax<float>(20.5f, 30.5f, 10.5f);
+            float actual = max.FindMaxElement();
+            Assert.AreEqual(actual, 30.5f);
         }
     }
 }
