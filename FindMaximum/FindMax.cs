@@ -8,21 +8,24 @@ namespace FindMaximum
 {
     public class FindMax
     {
-        public float FindMaxFloat(float first, float second, float third)
+        public string FindMaxString(string first, string second, string third)
         {
-            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
+            int firstLength = first.Length;
+            int secondLength = second.Length;
+            int thirdLength = third.Length;
+            if (firstLength.CompareTo(secondLength) > 0 && firstLength.CompareTo(thirdLength) > 0)
             {
-                Console.WriteLine("Float: First Number is greater -> " + first);
+                Console.WriteLine("String: First is Greater -> " + first);
                 return first;
             }
-            if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
+            if (secondLength.CompareTo(firstLength) > 0 && secondLength.CompareTo(thirdLength) > 0)
             {
-                Console.WriteLine("Float: Second Number is greater -> " + second);
+                Console.WriteLine("String: Second is Greater -> " + second);
                 return second;
             }
             else
             {
-                Console.WriteLine("Float: Third Number is greater -> " + third);
+                Console.Write("String: Third is Greater -> " + third);
                 return third;
             }
         }
