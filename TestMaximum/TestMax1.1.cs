@@ -6,11 +6,11 @@ namespace TestMaximum
     public class TestMax1
     {
         [Test]
-        public void GivenIntInput_WhenTestMax_ShouldReturnMaxNum()
+        public void GivenFloatInput_WhenTestMax_ShouldReturnMaxNum()
         {
             FindMax max = new FindMax();
-            int actual = max.FindMaxInteger(30, 10, 20);
-            Assert.AreEqual(actual,30);
+            float actual = max.FindMaxFloat(3.5f, 2.5f, 1.5f);
+            Assert.AreEqual(actual,3.5);
         }
     }
 }
