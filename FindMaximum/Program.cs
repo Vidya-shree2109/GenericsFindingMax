@@ -6,7 +6,7 @@ namespace FindMaximum
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Finding Max Programs.. !");
         }
     }
 }
