@@ -13,9 +13,10 @@ namespace TestMaximum
         [Test]
         public void GivenStringInput_WhenTestMax_ShouldReturnMaxNum()
         {
-            FindMax<string> max = new FindMax<string>("Banana", "Apple", "Peach");
-            string actual = max.FindMaxElement();
-            Assert.AreEqual(actual, "Peach");
+            string[] arr = { "Apple", "PineApple", "Grapes", "Banana" };
+            FindMax<string> max = new FindMax<string>(arr);
+            string actual = max.PrintMaxMethod();
+            Assert.AreEqual(actual, "PineApple");
         }
     }
 }
